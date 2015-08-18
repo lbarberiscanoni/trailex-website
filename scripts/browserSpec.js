@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     //send the user to the appropriate extension app store
     var chromeStore = "https://chrome.google.com/webstore/detail/trailex/ankedadffmmdhjnheefkkamknflnmime";
-    var operaStore = "https://addons.mozilla.org/en-US/firefox/addon/netflix-trailers/";
+    var operaStore = "https://auth.opera.com/account/login?return_url=https%3A//addons.opera.com/package/download/revision/netflix-trailer-loader/1.1/1/%3Fzip%3D1";
     var firefoxStore = "https://addons.mozilla.org/en-US/firefox/addon/netflix-trailers/";
     
     var goToStore = function(a, b) {
