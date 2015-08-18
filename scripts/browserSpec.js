@@ -8,6 +8,7 @@ $(document).ready(function() {
     var operaStore = "https://auth.opera.com/account/login?return_url=https%3A//addons.opera.com/package/download/revision/netflix-trailer-loader/1.1/1/%3Fzip%3D1";
     var firefoxStore = "https://addons.mozilla.org/en-US/firefox/addon/netflix-trailers/";
     
+    //generate a button specific to the browser kinda like in the Sublime Text Editor website
     var goToStore = function(a, b) {
         $("#specificDownload").append("<a>" + "Download for " + a + "</a>");
         $("#specificDownload a").attr("href", b).attr("target", "blank").addClass("btn btn-primary");
