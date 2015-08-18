@@ -1,0 +1,26 @@
+doctype html
+head 
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+    link(rel="stylesheet", href="stylesheets/main.css")
+    script(src="//code.jquery.com/jquery-1.11.3.min.js")
+    script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+body
+    h1.text-center Welcome to Trailex
+    .container
+        .row
+            .col-md-4
+            .col-md-4.text-center#specificDownload
+            .col-md-4
+        .row#allDownload
+            .col-md-3
+            .col-md-2
+                h2 Chrome
+                a(target="blank", href="https://chrome.google.com/webstore/detail/trailex/ankedadffmmdhjnheefkkamknflnmime").btn.btn-default Download
+            .col-md-2
+                h2 Firefox
+                a(target="blank", href="https://addons.mozilla.org/en-US/firefox/addon/netflix-trailers/").btn.btn-default Download
+            .col-md-2
+                h2 Opera
+                a(target="blank", href="https://chrome.google.com/webstore/detail/trailex/ankedadffmmdhjnheefkkamknflnmime").btn.btn-default Download
+            .col-md-3
+    script(src="scripts/browserSpec.js")
