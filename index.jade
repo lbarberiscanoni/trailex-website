@@ -5,23 +5,74 @@ head
     script(src="//code.jquery.com/jquery-1.11.3.min.js")
     script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
 body
-    h1.text-center Welcome to Trailex
+    .row
+        .col-md-4
+        ul.nav.nav-tabs.col-md-4
+            li
+                a(href="#home") Home
+            li 
+                a(href="#download") Download
+            li
+                a(href="#creators") Creators
+            li
+                a(href="#petition") Petition
+            li
+                a(href="#faq") FAQ
+        .col-md-4
+    .row#home
+        h1.text-center Welcome to Trailex
+        h3.text-center Trailers and Previews for Netflix
     .container
         .row
+            .col-md-3
+            .col-md-6#windowScreenShot
+                img(src="assets/window.png")
+            .col-md-3
         .row
             .col-md-4
             .col-md-4.text-center#specificDownload
             .col-md-4
         .row#allDownload
+            h2.text-center#download Choose your Browser
             .col-md-3
             .col-md-2
-                h2 Chrome
+                h3 Chrome
                 a(target="blank", href="https://chrome.google.com/webstore/detail/trailex/ankedadffmmdhjnheefkkamknflnmime").btn.btn-default Download
             .col-md-2
-                h2 Firefox
+                h3 Firefox
                 a(target="blank", href="https://addons.mozilla.org/en-US/firefox/addon/netflix-trailers/").btn.btn-default Download
             .col-md-2
-                h2 Opera
+                h3 Opera
                 a(target="blank", href="https://auth.opera.com/account/login?return_url=https%3A//addons.opera.com/package/download/revision/netflix-trailer-loader/1.1/1/%3Fzip%3D1").btn.btn-default Download
             .col-md-3
+        .row
+            h2.text-center#creators Meet the Creators
+            .col-md-6
+                .contact-holder
+                    contact-image-holder
+                        img(src="assets/lorenzo.png" alt="Lorenzo's pic").img-circle.img-responsive
+                    h3.text-center Idea Guy who Barely Knows How to Code
+                    hr 
+                    .content
+                        b Lorenzo
+                        | , originally from Italy, moved to South Carolina while in middle school. After overcoming the challenge of learning a new language in a foreign place, he  pursued his interested in politics and economics through his school's debate team and Youth in Government program. He discovered his passion for finance and computer science after taking online college courses at the height of the MOOCs boom in 2012. After graduating high school last May and advancing his coding skills at a local accellerator, Lorenzo moved to Palo Alto to work on Alpha-Sci full time. He is now being considered for the 2015 Thiel Fellowship. 
+                        hr
+                    .bottom
+                        p Lorenzo Barberis Canonico
+            .col-md-6
+                .contact-holder
+                    contact-image-holder
+                        img(src="assets/jesus.png" alt="Jesus's pic").img-circle.img-responsive
+                    h3.text-center The Guy who Actually Gets It Done
+                    hr 
+                    .content
+                        b Jesus
+                        |  , originally from Mexico, moved to South Carolina while in high school. Jesus and Lorenzo met while representing South Carolina at the national conference for Youth in Government, and they instantly connected through they shared love of math and programming and more importantly through their shared belief in the American Dream. A programming prodigy since elementary school, Jesus has applied his talent in all of his many interests, ranging from robotics to economics. When he is not changing the world through his code, Jesus spends his time taking online college courses and running cross country.  
+                        hr
+                    .bottom
+                        p Jesus Castaneda
+        .row
+            h2.text-center#petition Support the Petition
+        .row
+            h2.text-center#faq Frequently Asked Questions
     script(src="scripts/browserSpec.js")
